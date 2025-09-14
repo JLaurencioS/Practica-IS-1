@@ -1,0 +1,76 @@
+/* Estilos generales */ 
+body { 
+  /*font-family: Arial, sans-serif; */
+  text-align: center; 
+  margin-top: 20px; 
+  background-color: #f4f4f4; 
+} 
+ 
+/* Estilo para el título */ 
+h1 { 
+  color: #333; 
+} 
+
+/* Estilo para la foto del miembro del equipo */
+#member-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 5%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+ 
+/* Estilo para el párrafo */ 
+p { 
+  color: #666; 
+  font-size: 18px; 
+} 
+ 
+/* Estilo para el botón */ 
+button { 
+  padding: 10px 15px; 
+  margin: 10px;
+  font-size: 16px; 
+  font-family: noto-sans;
+  border: none; 
+  background-color: var(--bs-btn-active-bg); 
+  color: white; 
+  border-radius: 5px; 
+  cursor: pointer; 
+} 
+
+/* Estilo para el botón al pasar el ratón por encima */
+button:hover { 
+  background-color: var(--bs-btn-hover-bg); 
+}
+
+.btn-outline-inverse {
+  --bs-btn-color: #ff812d;
+  --bs-btn-border-color: #ff812d;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #ff812d;
+  --bs-btn-hover-border-color: #ff812d;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #ff812d;
+  --bs-btn-active-border-color: #ff812d;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #ff812d;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #ff812d;
+  --bs-gradient: none;
+  --bs-border-width: 1px;
+  box-shadow: 0 9px #d96200;
+}
+
+.btn-outline-inverse:active {
+  background-color: #ff6600;
+  box-shadow: 0 5px #d96200;
+  transform: translateY(4px);
+}
+
+/* Estilo para el nombre del equipo */
+#team-name { 
+  color: #007BFF; 
+  margin-bottom: 20px; 
+}
