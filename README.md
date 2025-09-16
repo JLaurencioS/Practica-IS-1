@@ -1,4 +1,4 @@
-Autores: Sanchez Rojas Jorge Laurencio y Elias Cuevas Torres
+Autores: Sanchez Rojas Jorge Laurencio y Jose Elias Cuevas Torres
 Nuestro proyecto es el desarrollo de una practica basica para la materia de Ingenieria de software, la practica de laboratorio 1.
 El proyecto se centra en la creacion de una pagina web con funcionalidades como un reloj en en la esquina inferior con la hora en tiempo real (GMT-6),
 el nombre del equipo en la parte central superior, en la parte central se observa la imagen, nombre y descripcion de los integrantes,
