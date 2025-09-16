@@ -6,7 +6,8 @@ body {
   font-family: 'Roboto', Arial, sans-serif; 
   text-align: center; 
   margin-top: 20px; 
-  background-color: #f4f4f4; 
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease-in-out; 
 } 
  
 /* Estilo para el título */ 
