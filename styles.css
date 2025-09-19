@@ -6,9 +6,12 @@ body {
   font-family: 'Roboto', Arial, sans-serif; 
   text-align: center; 
   margin-top: 20px; 
-  background-color: #f4f4f4;
+  background: linear-gradient(120deg, #0f2027, #ffffff, #000000, #ffffff, #0f2027);
+  background-size: 400% 400%; /* Solo una vez, no 400% 800% */
+  animation: waveBG 12s ease-in-out infinite;
   transition: background-color 0.3s ease-in-out; 
-} 
+}
+
  
 /* Estilo para el título */ 
 h1 { 
@@ -130,7 +133,7 @@ button:hover {
   background: rgba(0,0,0,0.35);
 }
 .modal-content {
-  background: #fff;
+  background: #000000;
   margin: 8% auto;
   padding: 24px 32px 20px 32px;
   border-radius: 12px;
@@ -139,6 +142,7 @@ button:hover {
   box-shadow: 0 4px 24px rgba(0,0,0,0.18);
   position: relative;
   font-family: 'Roboto', Arial, sans-serif;
+  color: #000000;
 }
 .close {
   color: #888;
@@ -152,4 +156,63 @@ button:hover {
 }
 .close:hover {
   color: #ff812d;
+}
+
+/* Estilo para la tarjeta con efecto neón */
+.neon-card {
+  display: inline-block;
+  background: #181818;
+  border-radius: 18px;
+  padding: 32px 36px 24px 36px;
+  margin: 24px auto 32px auto;
+  box-shadow:
+    0 0 12px #00ffe7,
+    0 0 24px #00ffe7,
+    0 0 48px #00ffe7,
+    0 0 96px #00ffe7;
+  border: 2px solid #00ffe7;
+  transition: box-shadow 0.5s, border-color 0.5s;
+}
+.neon-card:hover {
+  box-shadow:
+    0 0 24px #ff00ea,
+    0 0 48px #ff00ea,
+    0 0 96px #ff00ea,
+    0 0 192px #ff00ea;
+  border-color: #ff00ea;
+}
+
+/* Estilo para el tooltip */
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 12px;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 110px;
+  font-size: 14px;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+#member-section {
+  position: relative;
+}
+
+#member-photo:hover + .tooltip,
+#member-photo:focus + .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes waveBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

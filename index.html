@@ -19,18 +19,21 @@
   <h2 id="team-name">Equipo Luislaorence</h2> 
  
   <!-- Sección de integrante --> 
-  <div id="member-section"> 
-    <img id="member-photo" src="images/alumno1.png" alt="Foto Alumno" > 
-    <p id="member-desc">Sanchez Laurencio - Laurencio.</p> 
+  <div id="member-section" class="neon-card"> 
+    <img id="member-photo" src="images/alumno1.png" alt="Foto Alumno">
+    <span class="tooltip" id="photo-tooltip">Haz clic para ver más información</span>
+    <p id="member-desc">Sanchéz Rojas Jorge Laurencio - Programador en JAVAFX.</p> 
   </div> 
- 
-  <!-- Botones de interacción --> 
-  <button class="btn-outline-inverse" id="colorButton">Cambiar color de fondo</button> 
-  <button class="btn-outline-inverse" id="switchButton">Mostrar siguiente integrante</button> 
- 
 
-<div id="clock"></div>
-<div id="toast"></div>
+  <!-- Botones de interacción debajo del card -->
+  <div style="margin-top: 24px;">
+    <button class="btn-outline-inverse" id="colorButton">Cambiar color de fondo</button> 
+    <button class="btn-outline-inverse" id="switchButton">Mostrar siguiente integrante</button> 
+  </div>
+ 
+<div><div id="clock"></div>
+<div id="toast"></div></div>
+
 <!-- Vinculamos el archivo JS --> 
 <script src="script.js"></script> 
 
@@ -38,7 +41,7 @@
   <div class="modal-content">
     <span id="close-modal" class="close">&times;</span>
     <img id="modal-photo" src="images/alumno1.png" alt="Foto Alumno" style="width:120px;height:120px;border-radius:8px;margin-bottom:10px;">
-    <h3 id="modal-desc">Sanchez Laurencio - Laurencio.</h3>
+    <h3 id="modal-desc" style="color: rgb(255, 255, 255);">Sanchéz Rojas Jorge Laurencio - Programador en JAVAFX.</h3>
     <p id="modal-extra">Aquí puedes agregar más detalles del alumno.</p>
   </div>
 </div>
